@@ -6,8 +6,11 @@ const App = ()=>{
 }
 
 function SaludarEnIdiomas({idioma}){
-  if(idioma === "es") return <p> Hola</p>;
-  if(idioma === "es") return <p> Hello</p>;
+  if(idioma === "es"){
+    return <span> Hola</span>;
+  }else{
+    return <span> Hello</span>;
+ }
 }
 
 const Saludo = () =>{
