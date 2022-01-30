@@ -5,6 +5,11 @@ const App = ()=>{
   return <h1> <Button /> <Saludo /> <Bunny/> </h1>
 }
 
+function SaludarEnIdiomas(){
+  if(idioma === "es") return <p> Hola</p>;
+  if(idioma === "es") return <p> Hello</p>;
+}
+
 function Button (){
   return <p> "es un botón" </p>
 }
