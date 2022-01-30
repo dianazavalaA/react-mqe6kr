@@ -15,7 +15,7 @@ const Bunny = ()=>{
 
 
 const Saludo = () =>{
-  return <p> Que onda</p>
+  return <p> Que onda { 5/6 } </p>
 }
 
 render (<App />, document.getElementById('root'))
