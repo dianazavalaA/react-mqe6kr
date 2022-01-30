@@ -1,21 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+const Saludo = () =>{
+const name = 'Diana Laura';
+const idioma = "es";
+return{
+    <div>
+     {
+       idioma=== "es"&& <p>Hola</p>
+     }
+    </div>
+  }
+}
+
 const App = ()=>{
   return <h1> <Saludo />  </h1>
 }
-
-function SaludarEnIdiomas({idioma}){
-  if(idioma === "es"){
-    return <span> Hola</span>;
-  }else{
-    return <span> Hello</span>;
- }
-}
-
-const Saludo = () =>{
-const name = 'Diana Laura';
-  return <p> <SaludarEnIdiomas idioma="es" /> { name } </p>;
-}
-
 render (<App />, document.getElementById('root'))
