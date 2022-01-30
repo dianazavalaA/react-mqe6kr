@@ -15,7 +15,9 @@ const Bunny = ()=>{
 
 
 const Saludo = () =>{
-  return <p> Que onda { 5/6 } </p>
+const name = 'Diana Laura';
+
+  return <p> Que onda { name } </p>
 }
 
 render (<App />, document.getElementById('root'))
