@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 
 const App = ()=>{
-  return <h1> <Button /> Hola perros! <Bunny/> </h1>
+  return <h1> <Button /> <Saludo /> <Bunny/> </h1>
 }
 
 function Button (){
@@ -11,6 +11,11 @@ function Button (){
 
 const Bunny = ()=>{
   return <p> "eres el mejor conejo!" </p>
+}
+
+
+const Saludo = () =>{
+  return <p> Que onda</p>
 }
 
 render (<App />, document.getElementById('root'))
