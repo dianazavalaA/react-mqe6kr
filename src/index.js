@@ -13,6 +13,7 @@ function getNombres(){
   for(var i=0;i< nombres.length;i++ ){
     elementosLista.push(<li>{nombres[i]}</li>);
   }
+  console.log(elementosLista);
   return elementosLista;
 }
 
