@@ -13,8 +13,12 @@ const Saludar = ({ nombre, idioma })=>{
   return <p>{saludo} {nombre}</p>
 }
 
+Saludar.defaultProps ={
+  idioma: 'en'
+}
+
 const App = ()=>{
-  return <div> <Saludar nombre= 'Daiana'   idioma='en'  /> </div>
+  return <div> <Saludar nombre= 'Daiana' /> </div>
 }
 
 render(<App />, document.getElementById('react-app'));
