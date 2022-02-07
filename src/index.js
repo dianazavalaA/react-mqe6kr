@@ -8,7 +8,7 @@ const Button = ()=>{
   return (
     <div>
       <p>Presionado: {counter} </p>
-      <button onClick={ ()=>console.log(':3')} >Click me!</button>
+      <button onClick={ ()=> setCounter(counter + 1) } >Click me!</button>
     </div>
   )
 }
