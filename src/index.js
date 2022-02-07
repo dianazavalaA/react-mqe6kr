@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-//const App = ()=>{return <h1>Hola Mundo</h1>;}
+const nombres = [
+  'Diana',
+  'Laura',
+  'Alvaro',
+  'Cuco'
+]
 
-class App extends Component{
-  render(){
-    return <h1>Heellooo Peteee</h1>
-  }
+const Saludar = ()=>{
+  const nombre = 'Uriel';
+  return <p>Hola {nombre}</p>
 }
 
+const App = ()=>{
+  return <div> <Saludar /> </div>
+}
 
 render(<App />, document.getElementById('react-app'));
