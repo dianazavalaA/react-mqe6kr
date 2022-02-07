@@ -8,13 +8,13 @@ const nombres = [
   'Cuco'
 ]
 
-const Saludar = ()=>{
-  const nombre = 'Uriel';
-  return <p>Hola {nombre}</p>
+const Saludar = ({ nombre, idioma })=>{
+  const saludo = idioma === 'es' ? 'Hola' : 'Hello';
+  return <p>{saludo} {nombre}</p>
 }
 
 const App = ()=>{
-  return <div> <Saludar /> </div>
+  return <div> <Saludar nombre= 'Daiana'   idioma='en'  /> </div>
 }
 
 render(<App />, document.getElementById('react-app'));
