@@ -7,7 +7,7 @@ const Button = ()=>{
 
   return (
     <div>
-      <p>Presionado: 0</p>
+      <p>Presionado: {counter} </p>
       <button>Click me!</button>
     </div>
   )
